@@ -1,0 +1,815 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Интернет-магазин Автозапчастей MPARTS.KZ - купить запчасти в Астане</title>
+    <meta name="description" content="Купить запчасти по очень выгодным ценам! Интернет-магазин автозапчастей в Астане, г.Нур-Султан. Магазин запчастей. Большой ассортимент запчастей. Только качественные запчасти оригинальные и дубликаты, аналоги. �&nbsp;аботаем с брендами: PATRON, KAYABA, MONROE, OPTIMAL, SWAG, CONTITECH, FORMPART, DENSO, ERA, FEBI, BILSTEIN, HSB, KNECHT, BOSCH, TRW. Онлайн оплата карточкой. Запчасти Нур-Султан, запчасти Алматы, запчасти Караганда,  запчасти Шымкент, запчасти Павлодар, запчасти Атырау, запчасти Тараз, запчасти Усть-Каменогорск, запчасти Актобе, запчасти Актау, запчасти Семей, запчасти Уральск, запчасти Петропавловск, запчасти Кокшетау, запчасти Костанай, запчасти Туркестан, запчасти Талдыкорган, запчасти Кызылорда, запчасти Экибастуз, запчасти Темиртау, запчасти Жезказган, запчасти Аркалык, запчасти �&nbsp;удный, запчасти Арыс, запчасти Лисаковск, запчасти Степногорск.">
+    <meta name="keywords" content="запчасти в Астане, запчасти в Караганде, запчасти в г.Нур-Султане, магазин запчастей Астана, магазин запчастей Караганда, магазин запчастей г.Нур-Султан, запчасть, магазин, автозапчасть, заказ, купить, запчасти, автозапчасти, астана, казахстан, иномарки, автомобили, ремонт, нур-султан, Audi, Ауди, BMW, БМВ, Chevrolet, Шевроле, Chrysler, Крайслер, Citroen, Ситроен, Dodge, Додж, Fiat, Фиат, Ford, Форд,  Honda, Хонда, Hyundai, Хендай, Хюндай, Infiniti, Инфинити, Jaguar, Ягуар, Kia, Киа, Land Rover, Ленд �&nbsp;овер, �&nbsp;ендж �&nbsp;овер, Lexus, Лексус, Mazda,Мазда, Mercedes, Мерседес, Мерс, Mitsubishi, Митсубиши, Митсубиси, Nissan, Ниссан, Нисан, Opel, Опель, Peugeot, Пежо, Porsche, Порше, Порш, Renault, �&nbsp;ено, Skoda, Шкода, Subaru, Субару, Suzuki, Сузуки, Toyota, Тойота, Volkswagen, Фольксваген, Volvo, Вольво">
+    		    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.client.css" media="screen">
+    <link rel="stylesheet" href="css/client.css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
+
+        <link rel="stylesheet" href="css/custom.css" media="screen">
+    <link rel="shortcut icon" href="images/593448f5ede830904a528da9e8a5eb5e2e3adc86.png">
+    <script async="" src="js/tag.js"></script><script src="js/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+
+
+<script data-pf-id="cd3696b4-b038-4ce2-922c-b48fe56b4519" src="js/widget.js"></script></head>
+
+
+<body class="saplab">
+    <div class="modal fade" id="login-modal">
+        <div class="modal-dialog auth">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button id="close-login-modal" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Авторизация на сайте</h4>
+                </div>
+                <div class="modal-body bs-component">
+                    <form class="form-1 bs-component" name="login" method="post" action="/account/account/login">
+                        <h4></h4>
+
+                        <p class="field">
+                            <input id="phone" type="text" name="phone" class="phone" value="" placeholder="+7 (___) ___-____">
+                            <i class="fa fa-phone icon-large"></i>
+                        </p>
+
+                        <p class="field">
+                            <input type="password" name="password" placeholder="Пароль">
+                            <i class="fa fa-lock icon-large"></i>
+                        </p>
+
+                        <p class="register">
+                            <span class="loading left hidden">�&nbsp;</span>
+                            <button id="submit" href="#" class="btn btn-success btn-sm pull-left">Войти в магазин</button>
+                            <a class=" pull-left" href="/account/account/register">�&nbsp;егистрация</a>
+                            <a class=" pull-left" href="/account/account/forgot">Забыли пароль?</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="office-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button id="close-office-modal" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Офисы и точки выдачи</h4>
+                </div>
+                <div class="modal-body offices bs-component">
+                                        <ul>
+                                                        <li>
+                                    <a class="selected" point-id="1" point-type="office">
+                                                                                    <i class="fa fa-check"></i>
+                                                                                <b>Астана</b>, ул. Куйши Дина 28                                    </a>
+                                </li>
+
+                                                                <li>
+                                    <a point-id="1" real_caption="Астана, ул. Куйши Дина 28" data-placement="right" title="Будет выбран головной офис Астана ул. Куйши Дина 28">Нет офиса в моём регионе <i class="fa fa-info-circle"></i></a>
+                                </li>
+                                                    </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bodytop">
+            <nav role="navigation" class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <!-- Collection of nav links, forms, and other content for toggling -->
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                                                    <a data-toggle="modal" href="#" data-target="#office-modal" id="change-office"><i class="fa fa-location-arrow" aria-hidden="true"></i><b> Астана</b> | ул. Куйши Дина 28 </a>
+                                                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +7(778)449-76-33</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> manager@mparts.kz</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                                                            <li><a href="/account/account/register">�&nbsp;егистрация</a></li>                                <li>
+                                    <script> $('.nav').on('click', '.dropdown-menu', function(e) {
+                                       
+                                        e.stopPropagation();
+                                    });</script>
+
+                                    <button class="login-btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="far fa-user"></i>
+                                                                                    Войти
+                                                                                <span class="caret"></span>
+                                    </button>
+
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                                                    <li>
+                                                <form class="form-1 bs-component" name="login" method="post" action="/account/account/login">
+                                                    <h5>Вход в личный кабинет</h5>
+                                                    <p class="field">
+                                                        <input id="phone" type="text" name="phone" class="phone" value="" placeholder="+7 (___) ___-____">
+                                                    </p>
+                                                    <p class="field">
+                                                        <input type="password" name="password" placeholder="Пароль">
+                                                    </p>
+                                                    <br>
+                                                    <span class="loading left hidden">�&nbsp;</span>
+                                                    <button id="submit" href="#" class="btn btn-success btn-block"><i class="fa fa-sign-in" aria-hidden="true"></i> Войти в магазин</button>
+
+                                                    <p class="text-center">Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму</p>
+                                                    <a class="btn btn-warning btn-block" href="/account/account/register"><i class="fa fa-user" aria-hidden="true"></i> �&nbsp;егистрация</a>
+                                                    <p class="text-center"> <b><a href="/account/account/forgot">Забыли пароль?</a></b></p>
+                                                </form>
+                                            </li>
+                                                                            </ul>
+
+                                </li>
+                            </ul></div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+
+                                <div class="logocenter">
+								                                    <a href="/" class="logo"><img src="images/85e0cae48fee870b04c840f755e6267f544456aa.png" alt="Интернет-магазин запчастей для иномарок"></a>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="searchpanel">
+                                                                        <form id="search_mparts" action="/parts/search">
+                                        <div class="input-group">
+                                            <input type="text" value="" class="searchform form-control" name="pattern" placeholder="Введите VIN номер или артикул запчасти">
+                                            <div class="input-group-btn">
+                                                <span class="search-btn" data-container="body" data-toggle="popover" data-html="true" data-placement="bottom" data-content="<span>История доступна после <a href='/account/account/register'>�&nbsp;егистрации</a></span>
+
+">
+                                                    <i class="fa fa-history "></i></span>
+
+                                                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="btn-head">
+                                        <div class="btn-group btn-group-justified">
+                                            <div class="btn-group">
+                                                <a href="/account/cart" class="btn btn-default" style="border-right: 0px;"><span id="cart-items"><i class="fa fa-cart-arrow-down" aria-hidden="true"> <div class="bask_icon">0</div></i>  0 тнг.</span></a>
+                                            </div>
+                                            <div class="btn-group">
+                                                <a href="/account/order" class="btn btn-default"><i class="fa fa-copy "></i> Заказы</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav>
+
+    <div class="container">
+        <a id="touch-menu" class="mobile-menu" href="#">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            Меню
+        </a>
+    </div>
+    <ul class="menu">
+        <div class="container">
+                            <li>
+                                                    <a href="/catalogs/zashita-kartera" class="underline">Защиты двигателя</a>
+                            </li>
+                        <li>
+                                                                            <a href="#1" data-toggle="collapse">Каталоги товаров<i class="fa fa-angle-down pull-right"></i></a>
+                                        <ul class="submenu" id="1">                <li>
+                                                    <a href="/catalogs/electronics/accumulators" class="underline">Аккумуляторы</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/electronics/lamp" class="underline">Лампы освещения</a>
+                            </li>
+                        <li>
+                                                                            <a href="#33" data-toggle="collapse">Масла<i class="fa fa-angle-down pull-right"></i></a>
+                                        <ul class="submenu" id="33">                <li>
+                                                    <a href="/catalogs/oils/motor" class="underline">Масло Моторное</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/oils/transmission" class="underline">Масла Трансмиссионные</a>
+                            </li>
+                                    </ul>
+                            </li>
+                        <li>
+                                                                            <a href="/catalogs/fluids" class="underline">Технические жидкости</a>
+                                        <ul class="submenu" id="2">                <li>
+                                                    <a href="/catalogs/fluids/autochemistry" class="underline">Автохимия</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/fluids/distilled-water" class="underline">Вода дистиллированная</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/fluids/hydraulic-fluid" class="underline">Гидравлические жидкости</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/fluids/antifreeze" class="underline">Охлаждающие жидкости</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/fluids/washer-fluid" class="underline">Омывающие жидкости</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/fluids/grease" class="underline">Смазки</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/fluids/breaks" class="underline">Тормозные жидкости</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/fluids/additives" class="underline">Присадки</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/fluids/flushing-fluids" class="underline">Промывочные жидкости</a>
+                            </li>
+                                    </ul>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/tools/tool-kits" class="underline">Наборы инструментов</a>
+                            </li>
+                        <li>
+                                                                            <a href="#15" data-toggle="collapse">Электроника<i class="fa fa-angle-down pull-right"></i></a>
+                                        <ul class="submenu" id="15">                <li>
+                                                    <a href="/catalogs/electronics/charge" class="underline">Зарядные устройства</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/electronics/other" class="underline">Электроника прочая</a>
+                            </li>
+                                    </ul>
+                            </li>
+                        <li>
+                                                                            <a href="/catalogs/tire-wheels" class="underline">Шины и диски</a>
+                                        <ul class="submenu" id="19">                <li>
+                                                    <a href="/catalogs/tire-wheels/disks" class="underline">Диски</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/tire-wheels/wheel-cameras" class="underline">Камеры колесные</a>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/tire-wheels/tyres" class="underline">Шины</a>
+                            </li>
+                                    </ul>
+                            </li>
+                        <li>
+                                                    <a href="/catalogs/wiperblades" class="underline">Щетки стеклоочистителя</a>
+                            </li>
+                        <li>
+                                                    <a href="/autoparts" class="underline">Каталог запчастей</a>
+                            </li>
+                                    </ul>
+                            </li>
+                        <li>
+                                                    <a href="/payment" class="underline">Оплата</a>
+                            </li>
+                        <li>
+                                                    <a href="/delivery" class="underline">Доставка</a>
+                            </li>
+                
+            <li><a href="/office">Контакты</a></li>
+            <li><a href="/winter-auto-products" style="background: #008DF6; color:#ffffff;">ЗИМА !</a></li>
+			            
+        </div>
+    </ul>
+</nav>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var touch = $('#touch-menu');
+        var menu = $('.menu');
+
+        $(touch).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 767 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+
+    });
+</script>
+                    <div class="container">
+
+                        
+
+                        
+
+
+                        <div class="col-md-3">
+                            <div class="blockleft"></div>                        </div>
+
+                        <div class="col-md-12 center-block">
+                            <script src="js/nprogress.js"></script>
+
+<link rel="stylesheet" href="css/nprogress.css">
+
+    <script src="js/js.cookie.min.js"></script>
+    <style type="text/css">
+        .cookies_oferta {
+            position: fixed;
+            z-index: 11;
+            text-align: center;
+            bottom: 0px;
+            left: 0px;
+            font-size: 15px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 14px;
+            background: #ffffff;
+            box-shadow: 1px 1px 5px 5px #2c2c2c40;
+        }
+    </style>
+    <div class="cookies_oferta">
+		Продолжая использовать наш сайт, Вы даете согласие на обработку файлов <a href="https://ru.wikipedia.org/wiki/Cookie" style="text-decoration: underline;">«Cookie»</a>, которые обеспечивают правильную работу сайта.
+        <br><button class="btn btn-success" onclick="
+                    Cookies.set('cookie_agree', true, {expires: 365});
+                    $(this).parent().fadeToggle(500);
+                ">Я СОГЛАСЕН(-НА)</button>
+				�&nbsp;<a href="/cookie" style="text-decoration: underline;">ПОД�&nbsp;ОБНЕЕ</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="center " id="content">
+        <div class="content">
+		                        <small><div class="content2">
+    <div class="categories_wrap">
+        <div class="container2">
+            <div class="categories">
+				<a class="categories__box" href="/original-catalogs" style="background-image: url('images/bg_box1.jpg');">
+					<h6 class="categories__title">Поиск Запчастей</h6>
+
+					<p class="categories__about">
+						Ходовая часть, Двигатель,<br>
+						Тормозная система, Фильтры,<br>
+						Кузовные детали
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+
+				<a class="categories__box" href="catalogs/electronics/lamp" style="background-image: url('images/bg_box2.jpg');">
+					<h6 class="categories__title">Лампы освещения</h6>
+
+					<p class="categories__about">
+						Дальний и ближний свет,<br>
+						птф, подсветка номера
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+				
+<a class="categories__box" href="winter-auto-products" style="background-image: url('images/bg_boxx5.jpg');">
+					<h6 class="categories__title">Зимние автотовары</h6>
+
+					<p class="categories__about">
+						Бустеры,<br>
+						незамерзайки,<br>
+						щетки, тросы
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+
+
+				
+				
+				<a class="categories__box box_other" href="catalogs/fluids" style="background-image: url('images/bg_box4.jpg');">
+					<h6 class="categories__title">Масла и тех. жидкости</h6>
+
+					<p class="categories__about">
+						Моторные и трансмиссионные масла,<br>
+						охлаждающие, тормозные<br>
+						и омывающие жидкости
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+				
+				<a class="categories__box" href="catalogs/tools/tool-kits" style="background-image: url('images/bg_box9.jpg');">
+					<h6 class="categories__title">Инструменты</h6>
+
+					<p class="categories__about">
+						Универсальные наборы<br>
+						инструментов
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+				
+				<a class="categories__box" href="catalogs/electronics/accumulators" style="background-image: url('images/bg_box6.jpg');">
+					<h6 class="categories__title">Аккумуляторы</h6>
+
+					<p class="categories__about">
+						Автомобильные,<br>
+						мото
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+				
+				<a class="categories__box" href="catalogs/fluids/autochemistry" style="background-image: url('images/bg_box7.jpg');">
+					<h6 class="categories__title">Автохимия</h6>
+
+					<p class="categories__about">
+						Смазки, присадки,<br>
+						автошампунь
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+				
+				<a class="categories__box box_other" href="catalogs/fluids/antifreeze" style="background-image: url('images/bg_box4_1.jpg');">
+					<h6 class="categories__title">Охлаждающие жидкости</h6>
+
+					<p class="categories__about">
+						Красного, зеленого,<br>
+						желтого, синего и других цветов
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+				
+					<a class="categories__box box_white" href="/catalogs/wiperblades" style="background-image: url('images/bg_box3.jpg');">
+					<h6 class="categories__title">Щетки стеклоочистителя</h6>
+
+					<p class="categories__about">
+						Гибридные, каркасные,<br>
+						бескаркасные
+					</p>
+
+					<div class="categories__link">ПЕ�&nbsp;ЕЙТИ</div>
+				</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="help_wrap">
+        <div class="container2 help">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="help__title">Помощь по сайту</h2>
+                </div>
+            </div>
+
+            <div class="row">
+				<div class="col-md-3 col-6">
+					<div class="help__item">
+						<a class="help__link" href="#" data-video="https://www.youtube.com/embed/y_aJpPXxqjA" data-title="Как найти автозапчасть?" data-izimodal-open="#modal-iframe"><img class="help__img" src="images/btn_play.png" alt="play"></a>
+						
+						<p class="help__text">Как найти автозапчасть?</p>
+					</div>
+				</div>
+
+                <div class="col-md-3 col-6">
+                    <div class="help__item">
+                        <a class="help__link" href="#" data-video="https://www.youtube.com/embed/y_aJpPXxqjA" data-title="Как оформить заказ?" data-izimodal-open="#modal-iframe"><img class="help__img" src="images/btn_play.png" alt="play"></a>
+
+                        <p class="help__text">Как оформить заказ?</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="help__item">
+                        <a class="help__link" href="#" data-video="https://www.youtube.com/embed/y_aJpPXxqjA" data-title="Как оплатить заказ?" data-izimodal-open="#modal-iframe"><img class="help__img" src="images/btn_play.png" alt="play"></a>
+
+                        <p class="help__text">Как оплатить заказ?</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="help__item">
+                        <a class="help__link" href="#" data-video="https://www.youtube.com/embed/y_aJpPXxqjA" data-title="Где получить заказ?" data-izimodal-open="#modal-iframe"><img class="help__img" src="images/btn_play.png" alt="play"></a>
+
+                        <p class="help__text">Где получить заказ?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-iframe"></div>
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+<style type="text/css">.advantage {font-size: 22px;padding-bottom: 150px;}
+.advantage div {
+    padding: 15px;
+    line-height: 50px;
+    padding-left: 72px;
+    color: #8baebb;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.advantage div i {
+    font-size: 36px;
+    padding: 7px;
+    position: absolute;
+    margin-left: -45px;
+    color: #ff790e;
+}
+</style>
+</div></small>
+
+        </div>
+   
+	
+	</div>
+	
+
+
+</div>
+
+
+<div class="col-md-3">
+    <div class="blockright">
+</div>
+</div>
+	
+<script>
+    var right = $('.blockright').children().length;
+    var left = $('.blockleft').children().length;
+    if (right && left) {
+        c = $('.center-block');
+        c.addClass('col-md-6');
+        c.removeClass('col-md-12');
+		} else if (right || left) {
+        if (!left) {
+            $('.blockleft').parent().hide();
+		}
+        c = $('.center-block');
+        c.addClass('col-md-9');
+        c.removeClass('col-md-12');
+	}
+	
+</script>
+</div>
+
+<div class="col-md-12 footer">
+    <div class="container">
+		<div class="footer">
+            <div class="footer__about">
+				<h6 class="footer__title">О компании</h6>
+				<ul class="footer__list">
+					<li class="footer__item"><a class="footer__link" href="/about">О компании</a></li>
+					<li class="footer__item"><a class="footer__link" href="/office">Адреса офисов</a></li>
+					<li class="footer__item"><a class="footer__link" href="/vacancy">Вакансии</a></li>
+					<li class="footer__item"><a class="footer__link" href="/news">Новости</a></li>
+				</ul>
+			</div>
+            <div class="footer__partners">
+				<h6 class="footer__title">Сотрудничество</h6>
+				<ul class="footer__list">
+					<li class="footer__item"><a class="footer__link" href="#">Как стать партнером</a></li>
+					<li class="footer__item"><a class="footer__link" href="#">Поставщикам</a></li>
+					<li class="footer__item"><a class="footer__link" href="#">Производителям</a></li>
+					<li class="footer__item"><a class="footer__link" href="#">Оптовикам</a></li>
+				</ul>
+			</div>
+            <div class="footer__magazine">
+				<h6 class="footer__title">Интернет магазин</h6>
+				<ul class="footer__list">
+					<li class="footer__item"><a class="footer__link" href="/payment">Оплата заказа</a></li>				
+					<li class="footer__item"><a class="footer__link" href="/delivery">Доставка заказа</a></li>
+					<li class="footer__item"><a class="footer__link" href="/garantija">Условия Гарантии и Возврата</a></li>
+					<li class="footer__item"><a class="footer__link" href="/oferta">Публичная оферта</a></li>
+					<li class="footer__item"><a class="footer__link" href="/privacy-policy">Политика конфиденциальности</a></li>
+					<li class="footer__item"><a class="footer__link" href="/personal-information">Cбор и обработка персональных данных</a></li>
+					<li class="footer__item"><a class="footer__link" href="/rules">Пользовательское соглашение</a></li>
+
+				</ul>
+			</div>
+            <div class="footer__social">
+				<div class="footer__btn" data-toggle="modal" data-target="#call_back"><a class="footer__recall">Обратная связь<img class="footer__recall--img" src="images/bubble.png" alt="recall"></a><img class="footer__img" src="images/social.png" alt="social"></div>
+				<div class="social_box">
+									</div>
+		</div>
+	</div>
+	
+</div>
+
+</div>
+<div class="copyright">
+	<div class="container">
+		<p class="copyright_this"> © 2013-2022</p>
+		<p class="copyright_this">
+		<!-- Удаление нашего копирайта является нарушением оферты на использование ПО 6.5 пункт http://saplab.ru/oferta_buy_non-resident-->
+		<a href="https://secure.saplab.ru" target="_blank"><img src="images/logo.png" alt="Платформа магазина автозапчастей"></a></p>
+	</div>
+</div>
+<script>
+	var reCaptchaLoaded = false;
+	$('[name=pattern]').on('focus',function() {
+		console.log(111) 
+		// siteKey = '6Ld6wLocAAAAAC6Ef07bYdnSwEdQ-hUZ3kUo2yvw';
+        siteKey = '6Le7Ue4mAAAAAKDDYpku9RjzkagxHV2rzWgzJgmM';
+		if (!reCaptchaLoaded) {
+			$.getScript( "https://www.google.com/recaptcha/api.js?render="+siteKey, function( data, textStatus, jqxhr ) {
+				reCaptchaLoaded = true;
+				console.log( data ); // Data returned
+				console.log( textStatus ); // Success
+				console.log( jqxhr.status ); // 200
+				console.log( "Load was performed." );
+				
+			});
+		}
+	})
+    $('form#search_mparts').on('submit', function (e) {
+        var pattern = $('form#search_mparts input.searchform').val();
+
+        pattern = pattern.replace(/ /g, "")
+                .replace(/\./g, "")
+                .replace(/\-/g, "")
+                .replace(/\*/g, "")
+                .replace(/\\/g, "")
+                .replace(/\//g, "")
+                .replace(/&/g, "")
+                .replace(/'/g, "")
+                .replace(/"/g, "")
+                .replace(/\(/g, "")
+                .replace(/\)/g, "")
+                .replace(/\+/g, "");
+        var what = 'article';
+        if (pattern.length == 17) { // || pattern.split('-').length == 2
+            what = 'vin';
+        }
+        pattern = encodeURIComponent(pattern);
+        if (pattern == "") {
+            alert("Поле поиска детали не может быть пустым.");
+        } else {
+            if (window.NProgress !== undefined) {
+                NProgress.start();
+            }
+            switch (what) {
+                case 'article':
+                    url = '/parts/search/' + pattern;
+                    break;
+                case 'name':
+                    url = '/parts/search/' + pattern;
+                    break;
+                case 'vin':
+                    url = '/catalog/original?list=&vin=' + pattern;
+                    break;
+
+                default:
+                    url = '/parts/search/' + pattern;
+                    break;
+            }
+            //NProgress.inc();
+			
+			e.preventDefault();
+			grecaptcha.ready(function() {
+				grecaptcha.execute(siteKey, {action: 'submit'}).then(function(token) {
+					$.ajax({
+						type: 'post',
+						url: '/home/recaptcha',
+						data: {token:token},
+						success: function(response) {
+							console.log(response)
+							if (response == 1) {
+								window.location = url;
+							}
+						},
+						error: function(response) {console.log(response)}
+					})
+					// Add your logic to submit to your backend server here.
+				});
+			});
+
+        }
+
+        return false;
+    });
+
+
+    $('form#search_mparts [name=pattern]').attr('autocomplete', 'off');
+    var injected = false;
+    var complete_row = '<tr style="cursor:pointer;" onclick="window.location.href=\'/parts/search/{__article}/{__brand}\'; NProgress.start();"><td><i class="fa fa-search"></i></td><td>{article}</td><td>{brand}</td><td>{name}</td></tr>';
+    $('form#search_mparts [name=pattern]').on('keyup', function () {
+        var self = this;
+        var popover_base = $(self);
+        var body = "";
+        var val = $(self).val().replace(/[^a-zа-я0-9 ]/gi, '');
+        if (val.length >= 3) {
+            var base_body = '<a style="display:block" class="btn btn-sm btn-default" href="/parts/search/' + val + '"><i class="fa fa-search"></i> Показать всё по запросу ' + val + '</a>';
+            $.ajax({
+                url: "/parts/complete/" + val,
+                dataType: "json",
+                success: function (data) {
+                    if (!injected) {
+                        popover_base.popover({content: base_body, placement: "bottom", html: "true", container: "body"});
+                        popover_base.popover("show");
+                        injected = true;
+                    }
+                    if (data.length) {
+                        body = '<table class="table table-hover"><thead><tr><th colspan="4" class="text-center" style="text-transform:none; font-size:inherit;">Популярное по запросу ' + val + '</th></tr></thead>';
+                        for (var i in data) {
+                            data[i].article = data[i].article.replace(/ /g, ' ').replace(/-/g, '‑');
+                            data[i].__brand = encodeURIComponent(data[i].brand);
+                            data[i].__article = encodeURIComponent(data[i].__article);
+
+                            data[i].brand = data[i].brand.replace(/ /g, ' ').replace(/-/g, '‑');
+                            body += templatify(complete_row, data[i])
+                        }
+
+                        body += "</table>";
+                    } else {
+                        body = "";
+                    }
+                    body += base_body;
+                    var popover = popover_base.attr('data-content', body).data('bs.popover');
+                    popover.setContent();
+                    //console.log(getComputedStyle(popover.$tip.get(0)));
+                    popover.$tip.css('left', parseInt($('form#search_mparts [name=pattern]').get(0).getBoundingClientRect().left) + "px");
+                    popover.$tip.css('max-width', (parseInt(popover.$tip.find('table').css('width')) + 30) + 'px');
+                    popover.$tip.addClass(popover.options.placement);
+
+
+                }
+            });
+        } else {
+            popover_base.popover("destroy");
+            injected = false;
+        }
+    });
+</script>
+<script>(function () { var widget = document.createElement('script'); widget.dataset.pfId = 'cd3696b4-b038-4ce2-922c-b48fe56b4519'; widget.src = 'https://widget.profeat.team/script/widget.js?id=cd3696b4-b038-4ce2-922c-b48fe56b4519&now='+Date.now(); document.head.appendChild(widget); })()</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(22513321, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/22513321" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111202092-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111202092-2');
+</script>
+
+
+<script src="js/jquery.form.min.js"></script>
+<script src="js/jquery.inputmask.js"></script>
+<script src="js/jquery.inputmask.multi.min.js"></script>
+<script src="js/inputmask.opts.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/client.js"></script>
+<p id="back-top"><a href="#top"><span><i class="fa fa-chevron-up"></i></span></a></p>
+
+
+</body></html>
